@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- قائمة التنقل -->
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="services.html">خدماتنا</a></li>
+            <li><a href="contact.html" class="active">تواصل معنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- صفحة تواصل معنا -->
+    <section id="contact">
+        <h2>تواصل معنا</h2>
+        <p>لأي استفسار أو اقتراحات، يمكنكم التواصل معنا عبر وسائل الاتصال التالية:</p>
+
+        <!-- وسائل التواصل -->
+        <div class="contact-methods">
+            <a href="https://wa.me/message/FDALISAFBEYIB1" target="_blank" class="whatsapp">مراسلة عبر واتساب</a>
+            <a href="https://t.me/shak7664" target="_blank" class="telegram">مراسلة عبر تليجرام</a>
+            <a href="mailto:www.kaleemjamee2019@gmail.com" class="email">مراسلة عبر البريد الإلكتروني</a>
+        </div>
+
+        <!-- إرسال رسالة عبر البريد الإلكتروني -->
+        <form action="mailto:www.kaleemjamee2019@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">الرسالة:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="إرسال">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
